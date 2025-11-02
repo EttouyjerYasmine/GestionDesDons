@@ -1,0 +1,14 @@
+com\example\GestionDesDons\controller\DonController.class
+com\example\GestionDesDons\repository\CampagneRepository.class
+com\example\GestionDesDons\repository\DonateurRepository.class
+com\example\GestionDesDons\controller\DashboardController.class
+com\example\GestionDesDons\service\DonateurService.class
+com\example\GestionDesDons\service\DonService.class
+com\example\GestionDesDons\entity\Don.class
+com\example\GestionDesDons\GestionDesDonsApplication.class
+com\example\GestionDesDons\entity\Donateur.class
+com\example\GestionDesDons\controller\DonateurController.class
+com\example\GestionDesDons\entity\Campagne.class
+com\example\GestionDesDons\controller\CampagneController.class
+com\example\GestionDesDons\repository\DonRepository.class
+com\example\GestionDesDons\service\CampagneService.class

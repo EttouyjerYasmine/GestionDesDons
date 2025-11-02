@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dons</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link th:href="@{/css/styles.css}" rel="stylesheet" />
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" th:href="@{/dashboard}">Gestion des Dons</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" th:href="@{/donateurs}">Donateurs</a></li>
+        <li class="nav-item"><a class="nav-link" th:href="@{/campagnes}">Campagnes</a></li>
+        <li class="nav-item"><a class="nav-link active" th:href="@{/dons}">Dons</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3>Dons</h3>
+    <a class="btn btn-primary" th:href="@{/dons/new}">Ajouter</a>
+  </div>
+  <div class="card shadow-sm">
+    <div class="table-responsive">
+      <table class="table table-striped mb-0">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Montant</th>
+          <th>Date</th>
+          <th>Moyen</th>
+          <th>Campagne</th>
+          <th>Donateur</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="d : ${dons}">
+          <td th:text="${d.id}"></td>
+          <td th:text="${d.montant}"></td>
+          <td th:text="${d.dateDon}"></td>
+          <td th:text="${d.moyen}"></td>
+          <td th:text="${d.campagne != null ? d.campagne.titre : ''}"></td>
+          <td th:text="${d.donateur != null ? d.donateur.nom : ''}"></td>
+          <td class="text-end">
+            <a class="btn btn-sm btn-outline-secondary me-2" th:href="@{'/dons/edit/' + ${d.id}}">Modifier</a>
+            <a class="btn btn-sm btn-outline-danger" th:href="@{'/dons/delete/' + ${d.id}}">Supprimer</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
