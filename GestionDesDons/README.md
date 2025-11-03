@@ -22,8 +22,8 @@
 - `src/main/resources/templates/` : vues Thymeleaf (`campagnes/`, `dons/`, `donateurs/`, `dashboard/`, `fragments/`).
 - `src/main/resources/static/` : ressources statiques (`css/styles.css`).
 
-### 2.3 Diagramme d’architecture (texte)
-- Navigateur → Contrôleur Spring MVC → Service → Repository → Base de données (MySQL) → Rendu Thymeleaf.
+### 2.3 Diagramme d’architecture :
+![Structure Projet gestiondon](https://github.com/user-attachments/assets/a56eb28c-a0b8-422c-8b13-323746e7090c)
 
 ## 3. Fonctionnalités principales
 - **CRUD**:
