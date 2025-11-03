@@ -115,5 +115,7 @@ Schéma ER (texte):
   - Dashboard / statistiques (total, par campagne, par mois, par moyen).
 
 ## 8. Auteurs / Encadrement
-- Étudiant: [Votre Nom]
-- Encadrant / Module / Établissement: [À compléter]
+- Étudiant: Ettouyjer Yasmine
+- Encadrant : Mohammed Lachgar
+- Établissement: ENS-Marrakech
+- Projet : Gestion des Dons 
