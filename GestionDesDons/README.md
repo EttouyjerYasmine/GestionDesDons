@@ -56,7 +56,7 @@ Schéma ER (texte):
 ### 4.3 Configuration base de données
 - **URL**: `jdbc:mysql://localhost:3306/gestion_dons_db?useSSL=false&serverTimezone=UTC`
 - **Utilisateur**: `root`
-- **Mot de passe**: `""` (vide par défaut; à adapter en local)
+- **Mot de passe**: `""`
 - **Dialecte**: `org.hibernate.dialect.MySQL8Dialect`
 - **Stratégie DDL**: `spring.jpa.hibernate.ddl-auto=update`
 - **Port serveur**: `8081`
@@ -69,7 +69,7 @@ Schéma ER (texte):
 
 ### 5.2 Installation
 1. Cloner le dépôt.
-2. Configurer `src/main/resources/application.properties` (URL/identifiants MySQL, port si nécessaire).
+2. Configurer `src/main/resources/application.properties` 
 3. Créer la base `gestion_dons_db` dans MySQL si elle n'existe pas.
 4. Lancer l'application:
    - `mvn spring-boot:run`
