@@ -16,9 +16,24 @@
 
 ### 2.2 Structure du code
 - `src/main/java/com/example/GestionDesDons/entity/` : classes JPA (`Campagne`, `Don`, `Donateur`).
+- <img width="960" height="540" alt="Capture d’écran 2025-11-06 150524" src="https://github.com/user-attachments/assets/e754ae98-1037-432b-84ec-1880e9e29af6" />
+
+
 - `src/main/java/com/example/GestionDesDons/repository/` : interfaces d'accès aux données (Spring Data JPA).
+- <img width="960" height="540" alt="Capture d’écran 2025-11-06 150741" src="https://github.com/user-attachments/assets/b6d7db0a-8414-41bb-9ec4-aaf0a22b4703" />
+
+
 - `src/main/java/com/example/GestionDesDons/service/` : logique métier (`CampagneService`, `DonService`, `DonateurService`).
+-<img width="960" height="540" alt="Capture d’écran 2025-11-06 150841" src="https://github.com/user-attachments/assets/15927338-2d88-4ec4-91ff-0aeadc803b69" />
+
+
+
 - `src/main/java/com/example/GestionDesDons/controller/` : contrôleurs web MVC (CRUD + dashboard).
+- <img width="960" height="540" alt="Controller" src="https://github.com/user-attachments/assets/18103dc8-ba7b-452f-a0c4-4f417a3a5639" />
+
+
+  
+
 - `src/main/resources/templates/` : vues Thymeleaf (`campagnes/`, `dons/`, `donateurs/`, `dashboard/`, `fragments/`).
 - `src/main/resources/static/` : ressources statiques (`css/styles.css`).
 
@@ -107,7 +122,7 @@ Schéma ER (texte):
 - Pour tester rapidement, créer quelques enregistrements via les formulaires `New` des sections Dons, Campagnes et Donateurs.
 
 ## 7. Démonstration (Vidéo)
-- Lien: à compléter.
+- https://youtu.be/6LvX2ffEL04
 - Contenu attendu:
   - Navigation dans les pages (Campagnes, Dons, Donateurs, Dashboard).
   - Création d’un enregistrement (ex: Don).
